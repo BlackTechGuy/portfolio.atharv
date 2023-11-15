@@ -3,6 +3,10 @@ window.addEventListener('scroll', function(){
     header.classList.toggle('sticky', window.scrollY >0);
 });
 
+// Add the html element to the javascript
+
+var html = document.getElementById('html');
+
 // Container and for Features variables
 
 const container = document.querySelector('.container');
