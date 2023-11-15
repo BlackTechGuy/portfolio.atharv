@@ -734,26 +734,76 @@ html{
 
   .hobbies .skating{
     position: absolute;
-    top: 55%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
   }
 
   .hobbies .dance{
     position: absolute;
-    top: 100%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 999;
+    width: 200px;
+    height: 200px;
   }
 
   .hobbies .tennis{
     position: absolute;
-    top: 145%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 999;
     margin-bottom: 10vh;
+    width: 200px;
+    height: 200px;
+  }
+
+  .hobbies .youtuber{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    margin-bottom: 10vh;
+    width: 200px;
+    height: 200px;
+  }
+
+  .hobie-title h1{
+    font-size: 0.7em;
+    padding: 60px 30px;
+    margin-top: -111px;
+  }
+
+  #pricing .basic{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+  }
+
+  .main .gold{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+  }
+
+  .main .platinum{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
   }
 }
 
