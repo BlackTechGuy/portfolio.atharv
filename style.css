@@ -12,10 +12,14 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#h1{
+  background: linear-gradient( #000, #18181b);
 }
 
 header {
-  background-color: #18181B;
   /*background-color: #18181B;*/
   height: 100vh;
   position: relative;
@@ -87,13 +91,28 @@ nav .button a:hover {
   text-decoration: underline;
 }
 
+.slogan{
+  position: absolute;
+  top: 20%;
+  left: 18.2%;
+  transform: translate(-50%,-50%);
+  z-index: 6;
+}
+
+.slogan p{
+  color: #fff;
+  font-size: 1.3rem;
+  opacity: 65%;
+}
+
 .title{
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 30%;
   transform: translate(-50%,-50%);
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
+  z-index: 3;
 }
 
 .title h1{
@@ -102,16 +121,32 @@ nav .button a:hover {
   text-decoration: dotted;
 }
 
+.details10{
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  transform: translate(-50%,-50%);
+  max-width: 600px;
+  z-index: 7;
+}
+
+.details10 p{
+  color: #fff;
+  font-size: 1.3rem;
+  opacity: 85%;
+}
+
 .personal-photo{
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
 }
 
 .personal-photo img{
-  width: 480px;
-  height: 550px;
+  width: 2080px;
+  height: auto;
 }
 
 #h2{
@@ -143,9 +178,10 @@ nav .button a:hover {
 
 .scroll-d1{
   position: absolute;
-  top: 90%;
-  left: 50%;
+  top: 70%;
+  left: 16%;
   transform: translate(-50%,-50%);
+  z-index: 5;
 }
 
 .scroll-d1 a{
@@ -165,10 +201,11 @@ nav .button a:hover {
 
 .blur{
   position: absolute;
-  box-shadow: 0 0 100000000000000000000000000000000000px 50px rgb(0, 81, 255);
+  box-shadow: 0 0 150px 50px rgb(0, 81, 255);
   top: 30%;
   left: 15%;
   transform: translate(-50%,-50%);
+  z-index: 2;
 }
 
 #h1 .title h1 span{
@@ -477,6 +514,7 @@ nav .button a:hover {
   top: 1%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 4;
 }
 
 .blur4{
@@ -485,6 +523,7 @@ nav .button a:hover {
   top: 120%;
   left: 20%;
   transform: translate(-50%,-50%);
+  z-index: 999;
 }
 
 .button-open-feature-box3,
@@ -741,6 +780,10 @@ html{
     height: 200px;
   }
 
+  .hobbies .skating p{
+    overflow: scrollY;
+  }
+
   .hobbies .dance{
     position: absolute;
     top: 60%;
@@ -749,6 +792,22 @@ html{
     z-index: 999;
     width: 200px;
     height: 200px;
+  }
+
+  .hobbbies .dance .dance-p p{
+    overflow: scrollY;
+  }
+
+  .basic .avail1{
+    display: none;
+  }
+
+  .gold .avail2{
+    display: none;
+  }
+
+  .platinum .avail3{
+    display: none;
   }
 
   .hobbies .tennis{
@@ -795,6 +854,7 @@ html{
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
+    margin-top: 45px;
   }
 
   .main .platinum{
@@ -804,6 +864,23 @@ html{
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
+    margin-top: 90px;
+  }
+
+  .main p{
+    display: none;
+  }
+
+  .skating .skating-p p{
+    overflow: scrollY;
+  }
+
+  .dance .dance-p p{
+    overflow: scrollY;
+  }
+
+  .logo2 h1{
+    font-size: small;
   }
 }
 
@@ -884,9 +961,10 @@ html{
 .blur5{
   position: absolute;
   box-shadow: 0 0 100000000000000000000000000000000000px 50px rgb(21, 255, 0);
-  top: 10%;
+  top: 5%;
   left: 65%;
   transform: translate(-50%,-50%);
+  z-index: 9999;
 }
 
 .click-text{
