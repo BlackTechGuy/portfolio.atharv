@@ -699,8 +699,22 @@ html{
   }
 
   .title{
-    font-size: 10px;
-    left: 60%;
+    font-size: xx-small;
+    left: 45%;
+  }
+
+  .title h1{
+    font-size: 40px;
+  }
+
+  .slogan{
+    left: 40%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+  }
+
+  .slogan p{
+    font-size: 15px;
   }
 
   .scroll-d1{
@@ -882,6 +896,41 @@ html{
   .logo2 h1{
     font-size: small;
   }
+
+  .details10{
+    height: 100px;
+    width: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+    left: 50%;
+    top: 70%;
+  }
+
+  .quote{
+    display: none;
+  }
+
+  .logo2{
+    top: 60%;
+    left: 32%;
+  }
+
+  .logo2 a{
+    font-size: xx-large;
+  }
+
+  .youtube a{
+    padding: 5px 20px;
+  }
+
+  .instagram a{
+    padding: 5px 20px;
+  }
+
+  .instagram{
+    top: 70%;
+    left: 75%;
+  }
 }
 
 .avail1 h1,
@@ -976,4 +1025,17 @@ html{
 
 .click-text p{
   color: #fff;
+}
+
+.quote{
+  position: absolute;
+  top: 75%;
+  left: 82%;
+  transform: translate(-50%,-50%);
+}
+
+.quote p{
+  font-size: xx-large;
+  color: #fff;
+  opacity:75%;
 }
