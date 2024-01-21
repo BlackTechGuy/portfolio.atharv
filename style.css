@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: monospace !important;
   transition: 0.9s ease;
 }
 
@@ -60,15 +60,35 @@ nav ul li:last-child {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
   padding: 10px 20px;
   border-radius: 5px;
   transition: 0.6s ease;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
   background: transparent;
-  text-decoration: underline;
+}
+
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: transform .5s;
+  transform-origin: right;
+}
+
+nav a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 nav .logo h1 {
@@ -139,14 +159,15 @@ nav .button a:hover {
 .personal-photo{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 70%;
   transform: translate(-50%,-50%);
   z-index: 1;
 }
 
 .personal-photo img{
-  width: 2080px;
+  width: 800px;
   height: auto;
+  opacity: 70%;
 }
 
 #h2{
@@ -447,7 +468,7 @@ nav .button a:hover {
 .logo2{
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 25%;
   transform: translate(-50%,-50%);
 }
 
@@ -699,22 +720,18 @@ html{
   }
 
   .title{
-    font-size: xx-small;
-    left: 45%;
-  }
-
-  .title h1{
-    font-size: 40px;
-  }
-
-  .slogan{
-    left: 40%;
-    top: 15%;
+    font-size: 10px;
+    left: 60%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%,-50%);
   }
 
-  .slogan p{
-    font-size: 15px;
+  .title h1{
+    font-size: 20px;
+    width: 200px;
+    height: auto;
   }
 
   .scroll-d1{
@@ -898,38 +915,20 @@ html{
   }
 
   .details10{
+    position: absolute;
+    width: 300px;
     height: 100px;
-    width: 230px;
-    overflow: hidden;
-    overflow-y: scroll;
+    top: 50%;
     left: 50%;
-    top: 70%;
+    transform: translate(-50%,-50%);
   }
 
-  .quote{
-    display: none;
-  }
-
-  .logo2{
-    top: 60%;
-    left: 32%;
-  }
-
-  .logo2 a{
-    font-size: xx-large;
-  }
-
-  .youtube a{
-    padding: 5px 20px;
-  }
-
-  .instagram a{
-    padding: 5px 20px;
-  }
-
-  .instagram{
-    top: 70%;
-    left: 75%;
+  .slogan{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:max-content;
   }
 }
 
@@ -1027,15 +1026,78 @@ html{
   color: #fff;
 }
 
-.quote{
-  position: absolute;
-  top: 75%;
-  left: 82%;
-  transform: translate(-50%,-50%);
+.contact-container{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.quote p{
-  font-size: xx-large;
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  background: linear-gradient(145deg , rgba(189, 129, 129, 0.5), rgba(52, 146, 118, 0.5));
+  backdrop-filter: blur(50px);
+  padding: 50px;
+  border-radius: 50px;
+}
+
+form .title-contact h1{
   color: #fff;
-  opacity:75%;
+  font-size: 70px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+}
+
+form .title-contact h1 span{
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+form .title-contact hr{
+  border-radius: 50px;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+form textarea.contact-inputs{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  resize: none;
+}
+
+form button#submit {
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+form button#submit:hover{
+  background: #37373a;
+  color: #fff;
 }
